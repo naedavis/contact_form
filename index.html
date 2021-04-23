@@ -4,17 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact Form</title>
     <link rel="stylesheet" href="./glass.css" />
   </head>
   <body>
-    <form action="https://formspree.io/f/xgervdoj" method="POST">
-      <h1 class="contact_form">Contact Form</h1>
+    <form
+      class="contact_form"
+      action="https://formspree.io/f/xgervdoj"
+      method="POST"
+    >
+      <h1 class="heading">Contact Form</h1>
+
+      <!-- name -->
+
       <div class="info">
-        <label>Your Name</label>
-        Name:
+        <label for="name" class="label">Your Name:</label>
         <input
           type="text"
+          class="input"
           name="name"
           id="name"
           placeholder="Full Name"
@@ -22,10 +29,10 @@
         />
       </div>
       <div class="info">
-        <label> Email</label>
-        Email:
+        <label for="email" class="label"> Email:</label>
         <input
           type="email"
+          class="input"
           name="email"
           id="email"
           placeholder="name@domain.com"
@@ -33,28 +40,28 @@
         />
       </div>
       <div class="info">
-        <label>Contact</label>
-        Contact:
+        <label for="contact" class="label">Contact:</label>
         <input
           type="tel"
+          class="input"
           name="contact"
           id="contact"
           placeholder="012 345 6789"
         />
       </div>
       <div class="info">
-        <label>Message</label>
-        Your message:
-        <textarea
+        <label for="message" class="label">Message:</label>
+        <input
           name="message"
+          class="input"
           id="message"
           placeholder="Your message here"
-        ></textarea>
+        />
       </div>
 
       <!-- your other form fields go here -->
 
-      <button type="submit">Send</button>
+      <button type="submit" class="button">Send</button>
     </form>
   </body>
 </html>

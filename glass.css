@@ -1,26 +1,64 @@
-#contact_form {
+* {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
 }
 
-body {
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
-.info {
-  padding: 0%;
-  margin: 0%;
+.contact_form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightpink;
-  background: rgba(249, 215, 215, 0.55);
+  padding: 100px;
+  background: rgba(0, 0, 0, 0.4);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: aliceblue;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://picsum.photos/1000);
+  background-size: cover;
+  font-family: sans-serif;
+}
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.label {
+  display: none;
+}
+.button {
+  background: rgba(241, 235, 235, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(236, 209, 149, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px;
+  color: aliceblue;
+}
+.input {
+  background: rgba(245, 235, 235, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(236, 149, 217, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px;
+  color: aliceblue;
+}
+.info {
+  padding: 10px;
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
